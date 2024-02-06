@@ -14,3 +14,25 @@ Do rozpoczęcia tego kursu potrzebujesz następujących rzeczy:
 git clone https://github.com/sulmar/sages-sunreef-csharp
 ```
 
+## Instalacja Mosquitto (docker)
+1. Uruchom kontener
+```
+docker-compose up
+```
+2. Sprawdź czy działa
+```
+docker ps
+```
+
+3. Podłącz się jako konsument wiadomości na kanale `test`
+```
+docker exec -it mosquitto mosquitto_sub -h localhost -t test
+```
+
+4. Wyślij wiadomość
+```
+docker exec -it mosquitto mosquitto_pub -h localhost -t test -m "Hello, MQTT!"
+```
+
+
+
