@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "InheritenceApp": {
+      "commandName": "Project",
+      "commandLineArgs": "Marcin"
+    }
+  }
+}
